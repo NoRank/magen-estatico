@@ -124,3 +124,9 @@ a:hover{
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
 }
+
+@media (max-width: 720px){
+  .wrapper {
+    width: 70%;
+  }
+}
