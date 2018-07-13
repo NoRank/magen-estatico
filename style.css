@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* Reset start */
+
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 3em;
+	font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+/* Reset end */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url("bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: table;  
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.cls-1 {
+  fill: none;
+}
+
+.cls-2 {
+  isolation: isolate;
+}
+
+.cls-3 {
+  fill: #4d4d4d;
+}
+
+.cls-4 {
+  fill: #f15a24;
+}
+
+.cls-5 {
+  clip-path: url(#clip-path);
+}
+
+.cls-6 {
+  clip-path: url(#clip-path-2);
+}
+
+.cls-7 {
+  clip-path: url(#clip-path-3);
+}
+
+a {
+  margin: auto;
+  opacity: 0.7;
+  transition: opacity 1s ease-in-out;
+}
+
+a:hover{
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
